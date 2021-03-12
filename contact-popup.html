@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="sb-popup">
+      <div class="sb-container">
+        <div class="sb-close-icon">
+          <div class="sb-icon-wrapper">
+            <svg
+              width="18"
+              height="18"
+              viewBox="0 0 18 18"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M1.125 1.33014L16.875 17.1551M16.875 1.33014L1.125 17.1551"
+                stroke="#2A2E3B"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </div>
+        </div>
+        <div class="sb-img-container">
+          <img class="sb-phone" src="./assets/phone.png" alt="phone" />
+        </div>
+        <div class="sb-content-container">
+          <h1 class="sb-h1 ">
+            Get a <span class="sb-bold">free consultation</span> for your domain
+          </h1>
+          <div class="sb-p-wrapper">  <p class="sb-p">Do you know that you can get a  <span class="sb-bold">free consultation</span>?</p>
+            <p class="sb-p">
+              Please just leave your contact information, and we will call you in
+              24 hours.
+            </p></div>        
+          <form class="sb-form" action="submit">
+            <div class="sb-form-item ">
+              <label class="sb-label " for="name-surname">Name and Surname:</label>
+              <input class="sb-input" type="text" id="name-surname" name="name-surname" placeholder="Enter your first name and surname"/>
+            </div>           
+            <div class="sb-form-item ">
+              <label class="sb-label " for="email">Email:</label>
+              <input class="sb-input" type="email" id="email" name="email" placeholder="Enter your email address" />
+            </div>
+            <div class="sb-form-item ">
+              <label class="sb-label " for="tel">Phone:</label>
+              <input class="sb-input" type="tel" id="tel" name="tel" placeholder="Enter your phone number" />
+            </div>
+            <div class="sb-form-button">
+              <input class="sb-btn" type="submit" value="Submit" />
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
