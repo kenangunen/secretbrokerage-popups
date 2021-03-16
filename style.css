@@ -47,6 +47,7 @@
   }
 }
 .sb-close-icon {
+  z-index: 2;
   position: absolute;
   right: 30px;
   top: 30px;
@@ -326,7 +327,7 @@
   }
 }
 .sb-btn {
-  margin-left: 20px; 
+  margin-left: 20px;
 }
 @media (max-width: 768px) {
   .sb-btn {
@@ -353,11 +354,11 @@
 .sb-basic-btn:hover {
   color: #dc6929;
 }
-.height-auto{
+.height-auto {
   height: auto !important;
   min-height: auto !important;
 }
-.mt-30{
+.mt-30 {
   margin-top: 30px;
 }
 .sb-worth-h1 {
@@ -376,4 +377,104 @@
   .sb-worth-h1 {
     font-size: 32px;
   }
+}
+
+/* sale-popup */
+.sb-sale-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  box-sizing: border-box;
+}
+@media (max-width: 1280px) {
+  .sb-sale-container {
+    padding: 60px;
+  }
+}
+@media (max-width: 530px) {
+  .sb-sale-container {
+    padding: 60px 30px;
+  }
+}
+
+.sb-discount-container {
+  width: 40%;
+  background-image: url("./assets/discount-bg.png");
+  height: 100%;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.sb-discount-header {
+  display: flex;
+  flex-direction: column;
+}
+.sb-light-header {
+  font-size: 110px;
+  font-weight: 300;
+  line-height: 105px;
+  letter-spacing: 3.4px;
+}
+.sb-strong-header {
+  font-size: 140px;
+  font-weight: 700;
+  line-height: 125px;
+}
+.sb-discount-amount {
+  margin-top: 40px;
+}
+.sb-discount {
+  font-size: 80px;
+  font-weight: 600;
+}
+
+.sb-sale-content-container {
+  width: 60%;
+  height: 100%;
+  background-color: #f7f7f7;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.sb-sale-wrapper {
+  border: 1px solid red;
+  width: 80%;
+  max-width: 1200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 60px 0;
+}
+.sb-center{
+  text-align: center;
+}
+.sb-list {
+  margin-top: 40px;
+}
+.sb-ul{
+  margin-bottom: 30px;
+}
+.sb-list-item {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-bottom: 8px;
+}
+.sb-list-num {
+  color: #597960;
+  font-size: 28px;
+  font-weight: 600;
+  margin-right: 10px;
+}
+.sb-w-100{
+  width: 100% !important;
+}
+.sb-m-0{
+  margin: 0 !important
 }
