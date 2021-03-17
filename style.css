@@ -5,6 +5,9 @@
 
 /* contact-popup */
 .sb-popup {
+  position: absolute;
+  top: 0;
+  z-index: 99999;
   width: 100%;
   height: 100vh;
   background-color: #f7f7f7;
@@ -14,6 +17,7 @@
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
   overflow-y: auto;
+  opacity: .97;
 }
 @media (max-width: 768px) {
   .sb-popup {
@@ -264,7 +268,7 @@
 }
 @media (max-width: 530px) {
   .sb-btn {
-    padding: 10px 0;
+    padding: 10px;
   }
 }
 .sb-btn:hover {
@@ -389,26 +393,38 @@
   position: relative;
   box-sizing: border-box;
 }
-@media (max-width: 1280px) {
+@media (max-width: 768px) {
   .sb-sale-container {
-    padding: 60px;
-  }
-}
-@media (max-width: 530px) {
-  .sb-sale-container {
-    padding: 60px 30px;
+   flex-direction: column;
   }
 }
 
 .sb-discount-container {
   width: 40%;
+  min-width: 420px;
   background-image: url("./assets/discount-bg.png");
   height: 100%;
   color: #fff;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: center;  
+}
+@media (max-width: 1280px) {
+  .sb-discount-container {
+    zoom: .8;
+  }
+}
+@media (max-width: 768px) {
+  .sb-discount-container {
+   width: 100%;
+   padding: 40px 0;
+  }
+}
+@media (max-width: 530px) {
+  .sb-discount-container {
+    zoom: .6;
+  }
 }
 .sb-discount-header {
   display: flex;
@@ -441,8 +457,12 @@
   align-items: center;
   justify-content: center;
 }
+@media (max-width: 768px) {
+  .sb-sale-content-container {
+   width: 100%;
+  }
+}
 .sb-sale-wrapper {
-  border: 1px solid red;
   width: 80%;
   max-width: 1200px;
   display: flex;
@@ -451,6 +471,25 @@
   justify-content: flex-start;
   padding: 60px 0;
 }
+@media (max-width: 768px) {
+  .sb-sale-wrapper {
+   width: 100%;
+   padding: 20px;
+  }
+}
+.sb-sale-h1 {
+  font-size: 36px;
+  font-weight: 500;
+  color: #597960;
+  line-height: 1.2;
+  box-sizing: border-box;
+}
+@media (max-width: 530px) {
+  .sb-worth-h1 {
+    font-size: 32px;
+  }
+}
+
 .sb-center{
   text-align: center;
 }
@@ -468,7 +507,7 @@
 }
 .sb-list-num {
   color: #597960;
-  font-size: 28px;
+  font-size: 24px;
   font-weight: 600;
   margin-right: 10px;
 }
@@ -477,4 +516,7 @@
 }
 .sb-m-0{
   margin: 0 !important
+}
+.sb-warning{
+  margin-top: 60px;
 }
