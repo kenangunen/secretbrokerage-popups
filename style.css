@@ -5,7 +5,7 @@
 
 /* contact-popup */
 .sb-popup {
-  position: absolute;
+  position: fixed;
   top: 0;
   z-index: 99999;
   width: 100%;
@@ -17,7 +17,6 @@
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
   overflow-y: auto;
-  opacity: .97;
 }
 @media (max-width: 768px) {
   .sb-popup {
